@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Admin Dashboard</title>
+    <link rel="icon" type="image/png" href="pictures/koala_color.svg"/>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            
+            display: grid;
+            grid-template-columns:  repeat(10, 10vw);
+            grid-template-rows:     repeat(10, 10vh);
+        }
+
+        .sidebar {
+            grid-row: 1 / -1;
+            grid-column: 1 / span 2;
+        }
+
+        .top {
+            grid-row: 1 / span 2;
+            grid-column: 3 / -1;
+            box-shadow: 0 100px black;
+        }
+
+        .bottom {
+            
+            grid-row: 3 / -1;
+            grid-column: 3 / -1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div style="margin-bottom: 6vh; font-size: 3.5vh;">  
+                <img style="height: 4vh;" src="pictures/koala.svg"> Dashboard</div>
+            <div> <img src="pictures/tori.svg"> Home</div>
+            <div> <img src="pictures/profile.svg"> Profile</div>
+            <div> <img src="pictures/mail.svg"> Messages</div>
+            <div> <img src="pictures/history.svg"> History</div>
+            <div> <img src="pictures/tasks.svg"> Tasks</div>
+            <div style="margin-bottom: 30vh;"> <img src="pictures/group.svg"> Communities</div>
+            <div> <img src="pictures/settings.svg"> Settings</div>
+            <div> <img src="pictures/support.svg"> Support</div>
+            <div> <img src="pictures/privacy.svg"> Privacy</div>
+        </div>
+        <div class="top">
+            <div class="upper">
+                <img src="pictures/search.svg" alt="seach" style="margin-right: 1vw;">
+                <input type="text" 
+                    style="margin-right: 10vw;
+                           border-radius: 32px;
+                           border: 1px solid black;
+                           height: 3vh;
+                           width: 47vw;
+                           padding: 1vh 2vh;
+                           font-size: 3vh;
+                           background-color: rgb(231, 238, 243);">
+                <img src="pictures/bell.svg" alt="notifications">
+                <img src="pictures/ppic.svg" style="height: 3vh;">
+                <p style="font-weight: bolder; font-size: 2vh;">Onii-chan</p>
+            </div>
+            <div class="lower">
+                <img style="
+                    border-radius: 50%; 
+                    width: 5vw; 
+                    height: 5vw; " 
+                    src="pictures/ppic.svg" alt="profile pic">
+                <div>
+                    <p style="font-size: 1.5vh; font-weight: bold;">Hi there,</p>
+                    <p style="font-size: 2.4vh; font-weight: bolder;">Onii-chan (@senpai)</p>
+                </div>
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+                
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="projects">
+
+            </div>
+            <div class="trending">
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

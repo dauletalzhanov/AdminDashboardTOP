@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.container {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/********************************************/
+
+.sidebar {
+    background-color: rgb(39, 125, 196);
+    padding: 2vh;
+    color: white;
+}
+
+.sidebar > div {
+    font-weight: bolder;
+    font-size: 2.5vh;
+    margin: 3vh 0;
+
+    display: flex;
+}
+
+.sidebar > div > img {
+    height: 3vh;
+    margin: 0 1vw;
+}
+
+/********************************************/
+
+.top {
+    display: grid;
+    -webkit-box-shadow: -3px 10px 32px -2px rgba(0,0,0,0.12);
+    -moz-box-shadow: -3px 10px 32px -2px rgba(0,0,0,0.12);
+    box-shadow: -3px 10px 32px -2px rgba(0,0,0,0.12);
+    
+}
+
+.top > .upper {
+    display: flex;
+    padding: 0 2vw;
+    
+    align-items: center;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+}
+
+.top > .upper > img {
+    height: 3vh;
+    margin: 0 1vw;
+}
+
+/* ____     ____    _____   ___     __*/
+
+.top > .lower {
+    align-items: center;
+    padding: 0 2vw;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr 1fr 1fr;
+}
+
+.top > .lower > button {
+    background-color: rgb(39, 125, 196);
+    border: none;
+    color: white;
+    height: 5vh;
+    width: 10vh;
+    border-radius: 32px;
+}
+
+.top > .lower > button:active {
+    background-color: white;
+    color: rgb(39, 125, 196);
+    border: 1px solid rgb(39, 125, 196);
+}
+
+/********************************************/
+
+.bottom {
+    padding: 5vh;
+    margin-top: 1vh;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-gap: 1vw;
+    
+}
+
+/* ____     ____    _____   ___     __*/
+.projects {
+    border: solid black 1px;
+}
+
+
+/* ____     ____    _____   ___     __*/
+
+.trending {
+    border: 1px solid black;
+
+}
